@@ -1,0 +1,127 @@
+{
+  "info": {
+    "name": "Reqres API Testing Collection",
+    "description": "Basic API testing collection for QA portfolio",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get users list",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://reqres.in/api/users?page=2",
+          "protocol": "https",
+          "host": ["reqres", "in"],
+          "path": ["api", "users"],
+          "query": [
+            {
+              "key": "page",
+              "value": "2"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get single user",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://reqres.in/api/users/2",
+          "protocol": "https",
+          "host": ["reqres", "in"],
+          "path": ["api", "users", "2"]
+        }
+      }
+    },
+    {
+      "name": "Register successful",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"eve.holt@reqres.in\",\n  \"password\": \"pistol\"\n}"
+        },
+        "url": {
+          "raw": "https://reqres.in/api/register",
+          "protocol": "https",
+          "host": ["reqres", "in"],
+          "path": ["api", "register"]
+        }
+      }
+    },
+    {
+      "name": "Register without password",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"eve.holt@reqres.in\"\n}"
+        },
+        "url": {
+          "raw": "https://reqres.in/api/register",
+          "protocol": "https",
+          "host": ["reqres", "in"],
+          "path": ["api", "register"]
+        }
+      }
+    },
+    {
+      "name": "Login successful",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"eve.holt@reqres.in\",\n  \"password\": \"cityslicka\"\n}"
+        },
+        "url": {
+          "raw": "https://reqres.in/api/login",
+          "protocol": "https",
+          "host": ["reqres", "in"],
+          "path": ["api", "login"]
+        }
+      }
+    },
+    {
+      "name": "Login without password",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"eve.holt@reqres.in\"\n}"
+        },
+        "url": {
+          "raw": "https://reqres.in/api/login",
+          "protocol": "https",
+          "host": ["reqres", "in"],
+          "path": ["api", "login"]
+        }
+      }
+    }
+  ]
+}
