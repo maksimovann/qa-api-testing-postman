@@ -1,2 +1,57 @@
-# qa-api-testing-postman
-API testing project using Postman with collections, checklists and bug reports.
+# QA API Testing Project: Postman
+
+## О проекте
+
+Учебный проект по тестированию API в Postman.
+
+В проекте проверяются базовые API-запросы: получение данных, регистрация, авторизация и негативные сценарии.
+
+Проект сделан для практики API testing и оформления QA-портфолио.
+
+## Что проверяется
+
+- GET запросы
+- POST запросы
+- status code
+- JSON response
+- обязательные поля
+- негативные сценарии
+
+## Структура проекта
+
+```text
+collections/       Postman collection
+checklists/        API чек-лист
+bug-reports/       примеры баг-репортов
+```
+
+## Какие навыки показывает проект
+
+- API testing
+- работа с Postman
+- проверка status codes
+- проверка JSON response
+- тестирование позитивных и негативных сценариев
+- оформление баг-репортов
+
+## Инструменты
+
+- Postman
+- REST API
+- JSON
+- GitHub
+- Markdown
+
+## Тестируемое API
+
+Для проекта используется учебное API:
+
+```text
+https://reqres.in
+```
+
+## Автор
+
+Анна Максимова
+
+GitHub: https://github.com/maksimovann
